@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DersPass Demo Kurulumu</title>
+<style>
+  :root { --bg:#f2f4f8; --card:#fff; --text:#16202e; --muted:#5a6473; --accent:#1f63b8; --line:#dfe3ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1520; --card:#18202d; --text:#eef2f8; --muted:#a8b2c2; --accent:#619ef2; --line:#2a3445; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:560px; margin:0 auto; padding:32px 16px 48px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; margin-bottom:16px; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  .btn { display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:14px; border-radius:12px; margin:12px 0; }
+  ol, ul { padding-left:20px; margin:8px 0; color:var(--muted); }
+  li { margin:4px 0; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  td { padding:8px 4px; border-top:1px solid var(--line); }
+  td:last-child { text-align:right; color:var(--muted); white-space:nowrap; }
+  .pw { font-family:ui-monospace, Menlo, monospace; background:var(--bg); padding:2px 6px; border-radius:6px; }
+  .note { font-size:14px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>DersPass Demo</h1>
+  <p class="sub">Deneme sürümü. Sunucuya bağlanmaz, içindeki veriler örnektir.</p>
+
+  <section class="card">
+    <h2>iPhone</h2>
+    <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://mkaanarin.github.io/derspass-demo/manifest.plist">iPhone'a yükle</a>
+    <ol>
+      <li>Bu sayfayı iPhone'da <b>Safari</b> ile açın ve düğmeye dokunun.</li>
+      <li>"Yükle" deyin; uygulama ana ekrana iner.</li>
+    </ol>
+    <p class="note">Yalnızca önceden kaydı yapılmış iPhone'lara kurulur. "Yüklenemiyor" uyarısı alırsanız bize iPhone'unuzun UDID bilgisini iletin.</p>
+  </section>
+
+  <section class="card">
+    <h2>Android</h2>
+    <a class="btn" href="DersPass-Demo.apk" download>APK'yı indir (58 MB)</a>
+    <ol>
+      <li>İnen dosyayı açın; telefon "bilinmeyen kaynaklardan yükleme" izni isterse verin.</li>
+      <li>Google Play Protect uyarı verirse "Yine de yükle" deyin.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Demo hesapları</h2>
+    <p class="note">Giriş ekranında alttaki "Demo hesapları" kartından birine dokunmanız yeterli. Şifre: <span class="pw">Demo2026</span></p>
+    <table>
+      <tr><td>Ayşe Yılmaz — veli (Ali, Zeynep)</td><td>0532 111 22 33</td></tr>
+      <tr><td>Murat Demir — veli (Elif)</td><td>0533 444 55 66</td></tr>
+      <tr><td>Ali Yılmaz — öğrenci</td><td>0535 777 88 99</td></tr>
+      <tr><td>Elif Demir — öğrenci</td><td>0536 123 45 67</td></tr>
+    </table>
+    <ul>
+      <li>Öğrenci hesabında "Giriş / çıkış okut" etiket gerekmeden okutulmuş gibi çalışır.</li>
+      <li>Öğrenciyle okutup çıkış yapın, sonra veli hesabıyla girin: okutma velinin ekranına ve bildirimlerine düşer.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
